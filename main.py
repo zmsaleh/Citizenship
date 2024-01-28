@@ -10,7 +10,15 @@ def apply_headers(response):
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('login.html')
+
+@app.route('/register.html')
+def register():
+    return render_template('register.html')
+
+@app.route('/login.html')
+def login():
+    return render_template('login.html')
 
 @app.route('/style.css')
 def css():
